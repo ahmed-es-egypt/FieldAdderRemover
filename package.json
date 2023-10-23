@@ -1,0 +1,19 @@
+{
+  "name": "field-adder-remover",
+  "version": "1.0.0",
+  "description": "A JavaScript library for dynamically adding and removing input fields.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmed-es-egypt/field-adder-remover.git"
+  },
+  "author": "Ahmed ES",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

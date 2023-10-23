@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>FieldAdderRemover Example</title>
+  <script src="../src/field-adder-remover.js"></script>
+</head>
+
+<body>
+  <h1>Adding and Removing Fields Example</h1>
+
+  <form id="formContainer">
+    <!-- Existing fields can be added here -->
+    <div id="fieldsList">
+      <div class="field">
+        <label for="field1">Name:</label>
+        <input type="text" id="field1" name="name" value="John Doe">
+      </div>
+      <div class="field">
+        <label for="field2">Name:</label>
+        <input type="text" id="field2" name="name" value="Jane Smith">
+      </div>
+    </div>
+
+  </form>
+
+  <button id="addFieldButton">Add Field</button>
+  <button id="removeFieldButton">Remove Field</button>
+
+  <script>
+    document.getElementById("addFieldButton").addEventListener("click", function () {
+      FieldAdderRemover.addField("formContainer");
+    });
+
+    document.getElementById("removeFieldButton").addEventListener("click", function () {
+      // Replace 'fieldIdToRemove' with the actual ID of the field to remove
+      FieldAdderRemover.removeField("fieldIdToRemove");
+    });
+  </script>
+</body>
+
+</html>
